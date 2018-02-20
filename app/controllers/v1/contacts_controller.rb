@@ -8,8 +8,8 @@ class V1::ContactsController < ApplicationController
   def create
     @contact = Contact.new(contact_params)
 
-    @onctact.save
-    render json @contact, status :created
+    @contact.save
+    render json: @contact, status: :created
   end
 
   def destroy
